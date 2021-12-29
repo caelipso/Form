@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Page</title>
+  </head>
+  <body>
+    <main id="container">
+      <header>
+        <h1 id="title"></h1>
+        <p id="description"></p>
+      </header>
+      <form action="">
+        <section>
+          <label id="name-label" for="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </section>
+        <section>
+          <label id="email-label" for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </section>
+        <section>
+          <label id="number-label" for="number" min="10" max="99"
+            >Age <span>(optional)</span></label
+          >
+          <input
+            id="number"
+            name="number"
+            type="number"
+            class="form-control"
+            placeholder="Age"
+          />
+        </section>
+        <section>
+          <p>Which option best describes your personality?</p>
+          <select id="dropdown" name="personality" class="form-control">
+            <option value="conscientiousness">Conscientiousness</option>
+            <option value="extraversion">Extraversion</option>
+            <option value="agreeableness">Agreeableness</option>
+            <option value="neuroticism">Neuroticism</option>
+            <option value="openness">Openness</option>
+            <option value="other">Other</option>
+          </select>
+        </section>
+        <section>
+          <p>How do you feel about yourself today?</p>
+          <label>
+            <input name="" value="feeling-great" type="radio" checked />Feeling
+            great</label
+          >
+          <label>
+            <input name="" value="feeling-okay" type="radio" checked />Feeling
+            okay</label
+          >
+          <label>
+            <input name="" value="feeling-not" type="radio" checked />Feeling
+            Not so good</label
+          >
+        </section>
+        <section>
+          <p>What is your favorite moment during the day</p>
+          <select
+            name="favorite-moment"
+            id="favorite-moment"
+            class="form-control"
+          >
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+          </select>
+          <section>
+            <p>What part of your life you think to need to improve?</p>
+            <label>
+              <input
+                name="body"
+                value="body"
+                type="checkbox"
+                class="input-checkbox"
+              />Body
+            </label>
+            <label>
+              <input
+                name="mindset"
+                value="mindset"
+                type="checkbox"
+                class="input-checkbox"
+              />mindset
+            </label>
+            <label>
+              <input
+                name="career"
+                value="career"
+                type="checkbox"
+                class="input-checkbox"
+              />Career
+            </label>
+            <label>
+              <input
+                name="health"
+                value="health"
+                type="checkbox"
+                class="input-checkbox"
+              />
+              Health
+            </label>
+          </section>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

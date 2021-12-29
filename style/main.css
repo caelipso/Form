@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+}
+#container {
+  background-image: url(/images/personality.jpg), rgba(255, 173, 173, 0.9);
+
+  width: 100vw;
+  height: 100vh;
+}
+#container-form {
+  background-color: rgba(255, 173, 173, 0.8);
+}

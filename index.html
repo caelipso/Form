@@ -4,15 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Page</title>
+    <link rel="stylesheet" href="/style/main.css" />
+    <title>Personality Form</title>
   </head>
   <body>
     <main id="container">
       <header>
-        <h1 id="title"></h1>
-        <p id="description"></p>
+        <h1 id="title">Personality Survey Form</h1>
+        <p id="description">
+          This form is designed to check how you are feeling.<br />Please fill
+          the form below.
+        </p>
       </header>
-      <form action="">
+      <form id="container-form">
         <section>
           <label id="name-label" for="name">Name</label>
           <input
@@ -50,6 +54,9 @@
         <section>
           <p>Which option best describes your personality?</p>
           <select id="dropdown" name="personality" class="form-control">
+            <option disabled selected value>
+              Choose what is representing you the best
+            </option>
             <option value="conscientiousness">Conscientiousness</option>
             <option value="extraversion">Extraversion</option>
             <option value="agreeableness">Agreeableness</option>
@@ -80,46 +87,82 @@
             id="favorite-moment"
             class="form-control"
           >
+            <option disabled selected value>Select an option</option>
             <option value="morning">Morning</option>
             <option value="afternoon">Afternoon</option>
             <option value="evening">Evening</option>
           </select>
-          <section>
-            <p>What part of your life you think to need to improve?</p>
-            <label>
-              <input
-                name="body"
-                value="body"
-                type="checkbox"
-                class="input-checkbox"
-              />Body
-            </label>
-            <label>
-              <input
-                name="mindset"
-                value="mindset"
-                type="checkbox"
-                class="input-checkbox"
-              />mindset
-            </label>
-            <label>
-              <input
-                name="career"
-                value="career"
-                type="checkbox"
-                class="input-checkbox"
-              />Career
-            </label>
-            <label>
-              <input
-                name="health"
-                value="health"
-                type="checkbox"
-                class="input-checkbox"
-              />
-              Health
-            </label>
-          </section>
+        </section>
+        <section>
+          <p>
+            What part of your life you think to need to improve?
+            <span>Check all that apply</span>
+          </p>
+          <label>
+            <input
+              name="physical-body"
+              value="physical-body"
+              type="checkbox"
+              class="input-checkbox"
+            />Physical Body
+          </label>
+          <label>
+            <input
+              name="mindset"
+              value="mindset"
+              type="checkbox"
+              class="input-checkbox"
+            />mindset
+          </label>
+          <label>
+            <input
+              name="career"
+              value="career"
+              type="checkbox"
+              class="input-checkbox"
+            />Career
+          </label>
+          <label>
+            <input
+              name="health"
+              value="health"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Health
+          </label>
+          <label>
+            <input
+              name="family"
+              value="family"
+              type="checkbox"
+              class="input-checkbox"
+            />Family
+          </label>
+          <label>
+            <input
+              name="romantic-love"
+              value="romantic-love"
+              type="checkbox"
+              class="input-checkbox"
+            />Romantic Love
+          </label>
+          <label>
+            <input
+              name="friends"
+              value="friends"
+              type="checkbox"
+              class="input-checkbox"
+            />Friends
+          </label>
+        </section>
+        <section>
+          <p>Anything else to add or express?</p>
+          <textarea
+            name="comments"
+            id="comments"
+            placeholder="Enter your comment here..."
+          ></textarea>
         </section>
       </form>
     </main>

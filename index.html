@@ -9,7 +9,7 @@
   </head>
   <body>
     <main id="container">
-      <header>
+      <header id="header-container">
         <h1 id="title">Personality Survey Form</h1>
         <p id="description">
           This form is designed to check how you are feeling.<br />Please fill
@@ -68,16 +68,31 @@
         <section>
           <p>How do you feel about yourself today?</p>
           <label>
-            <input name="" value="feeling-great" type="radio" checked />Feeling
-            great</label
+            <input
+              id="radio"
+              name="radio"
+              value="feeling-great"
+              type="radio"
+              check
+            />Feeling great</label
           >
           <label>
-            <input name="" value="feeling-okay" type="radio" checked />Feeling
-            okay</label
+            <input
+              id="radio"
+              name="radio"
+              value="feeling-okay"
+              type="radio"
+              check
+            />Feeling okay</label
           >
           <label>
-            <input name="" value="feeling-not" type="radio" checked />Feeling
-            Not so good</label
+            <input
+              id="radio"
+              name="radio"
+              value="feeling-not"
+              type="radio"
+              check
+            />Feeling Not so good</label
           >
         </section>
         <section>
@@ -96,7 +111,7 @@
         <section>
           <p>
             What part of your life you think to need to improve?
-            <span>Check all that apply</span>
+            <span>Check that apply</span>
           </p>
           <label>
             <input
@@ -164,6 +179,7 @@
             placeholder="Enter your comment here..."
           ></textarea>
         </section>
+        <button id="submit">Submit</button>
       </form>
     </main>
   </body>

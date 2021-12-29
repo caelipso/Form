@@ -1,12 +1,67 @@
 * {
   margin: 0;
 }
+/* custom of background */
 #container {
-  background-image: url(/images/personality.jpg), rgba(255, 173, 173, 0.9);
-
-  width: 100vw;
-  height: 100vh;
+  background: url(/images/background.jpg);
+  box-shadow: inset 0 0 0 1000px rgba(52, 58, 64, 0.8);
+  width: 100%;
+  height: 180vh;
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+/* custom header and description */
+#header-container {
+  text-align: center;
+}
+#description {
+  font-style: italic;
+}
+/* positionning and sizing od header, description and form container  */
+header,
 #container-form {
-  background-color: rgba(255, 173, 173, 0.8);
+  display: block;
+  margin: auto;
+  padding: 30px;
+  max-width: 500px;
+  line-height: 30px;
+  color: #dee2e6;
 }
+/* added background color, border font styling  */
+#container-form {
+  background-color: rgba(52, 58, 64, 0.9);
+  border: solid 5px rgba(52, 58, 64, 0.5);
+  border-radius: 2px;
+  font-weight: bold;
+  box-shadow: 1px 2px 5px black;
+}
+/* put labels into block for br  */
+label {
+  display: block;
+}
+/* labels sizing and styling */
+.form-control {
+  color: rgba(52, 58, 64, 0.8);
+  width: 495px;
+  height: 37px;
+  border-radius: 4px;
+  padding-left: 7px;
+  border: 2px solid rgba(52, 58, 64, 0.2);
+}
+/* added extra space between each section  */
+section {
+  margin-top: 20px;
+}
+/* style span  */
+span {
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+}
+#submit {
+  width: 495px;
+  height: 37px;
+}
+
+/* to do: adjust sizing of dropdowns and open entry comment box, 
+adjust coverage og img background, finalise  */
